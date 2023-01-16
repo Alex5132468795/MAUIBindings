@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MauiApp3.Model"
+             x:Class="MauiApp3.NewContent1">
+    <VerticalStackLayout x:Name="cont">
+        <Label Text="Name"></Label>
+        <Label x:Name="name" Text="{Binding U.Name}" ></Label>
+        <Label Text="Surname"></Label>
+        <Label x:Name="surname" Text="{Binding U.Surname}"></Label>
+        <Label Text="Futher's name"></Label>
+        <Label x:Name="furna" Text="{Binding U.FuthersName}"></Label>
+        <Label Text="Img"></Label>
+        <Image WidthRequest="100" Source="{Binding U.source}"></Image>
+    </VerticalStackLayout>
+</ContentView>
